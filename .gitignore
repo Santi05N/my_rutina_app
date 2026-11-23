@@ -1,0 +1,27 @@
+# Generado por reflex
+*.py[cod]
+assets/external/
+.web
+.states
+*.db
+*.sqlite
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+
+# Variables de entorno
+.env
+.env.*
+
+# Configuración local del editor
+.vscode/
+.DS_Store
