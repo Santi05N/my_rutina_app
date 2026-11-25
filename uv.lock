@@ -189,10 +189,14 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "reflex" },
+    { name = "reflex-swipe" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "reflex", specifier = ">=0.9.8.post1" }]
+requires-dist = [
+    { name = "reflex", specifier = ">=0.9.8.post1" },
+    { name = "reflex-swipe", specifier = ">=1.1.2" },
+]
 
 [[package]]
 name = "packaging"
@@ -577,6 +581,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/05/56/a68459deba78e7d5217dbafa4188b28d47a13bfef9a3fe7b7ca329c57542/reflex_hosting_cli-0.1.70.tar.gz", hash = "sha256:b2ff32ce89306fdf97acf9778b01f63a6c24b611cbd5529b3c36bb7ba0e7f47d", size = 59850, upload-time = "2026-08-18T22:34:31.157Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/2a/25/4e2aed5fed6c83246c2a9c198ae249f6028b96268b49eaf53f0eb3921285/reflex_hosting_cli-0.1.70-py3-none-any.whl", hash = "sha256:cc6ee9e3bc77d85f17679b57aa8799397101e8adc73945ef6ad7efb7326eedd8", size = 69034, upload-time = "2026-08-18T22:34:30.121Z" },
+]
+
+[[package]]
+name = "reflex-swipe"
+version = "1.1.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "reflex" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/55/6e/cba8b29e45dd53b62571be6bee3b4266dbb4953d08422a13d785096ffc2c/reflex_swipe-1.1.2.tar.gz", hash = "sha256:802f140b7000bb98428684a2b7fb6afe623e12cef50a5f24adba83601cec84a9", size = 56294, upload-time = "2025-06-13T20:56:33.769Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e3/86/b8335f5e85daa1e0b3a99faec21ba338621c13ddcb3b50e4f3e731a2acd3/reflex_swipe-1.1.2-py3-none-any.whl", hash = "sha256:cdec1eba4c0fb5956ccada1b022b23156809af82979cb42bd5155b535ece3364", size = 4042, upload-time = "2025-06-13T20:56:33.018Z" },
 ]
 
 [[package]]

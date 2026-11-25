@@ -39,6 +39,7 @@ class RutinaState(rx.State):
         if self.limite_elementos:
             self.rutina.elementos.append(item)
             self.calcular_dificultad()
-        else:
+            # return f"{item.fig} agregado correctamente"
+        # else:
             # Mostrar mensaje que ya no se pueden agregar mas elementos
-            ...
+            # return "Se alcanzo el limite de elementos en la rutina"
