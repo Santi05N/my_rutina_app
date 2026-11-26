@@ -5,5 +5,6 @@ config = rx.Config(
     plugins=[
         rx.plugins.SitemapPlugin(),
         rx.plugins.TailwindV4Plugin(),
-    ]
+    ],
+    frontend_host="0.0.0.0",
 )

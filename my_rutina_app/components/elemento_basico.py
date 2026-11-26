@@ -21,36 +21,35 @@ def elemento_box(item: Elemento, nombre_funcion: str) -> rx.Component:
         nombre_funcion,
         ("agregar", boton_simple("Agregar a rutina", "green")),
         ("borrar", boton_simple("Eliminar de rutina", "red")),
-        boton_simple("Deshabilitado", "gray")
+        boton_simple("Favorito", "gray")
     )
     
     return rx.card(
         # Tira de color a la izquierda del elemento
-        rx.flex(
+        rx.hstack(
 
             # Simbologia fig y color de fondo segun la direccion
-            rx.flex(
+            rx.box(
                 rx.text(f"{item.fig}", size="4"),
                 padding='3',
                 border_radius="4px",
                 bg=bg_color,
-                align="center",
-                justify="center",
             ),
 
             # Nombre del elemento
-            rx.text(item.nombre, weight="bold", size="3"),
-
-            rx.spacer(),
+            rx.box(
+                rx.text(item.nombre, weight="bold", size="1"),
+                flex="1",
+                min_width="0",
+            ),
 
             # Dificultad del elemento
-            rx.vstack(
+            rx.box(
                 rx.text("Diff:", size="1", color_scheme="gray"),
                 rx.text(
                     item.dificultad, weight="bold", size="4", class_name="mono"
                 ),
-                align_items="end",
-                spacing="0",
+                text_align="right",
             ),
 
             # Boton para agregar o eliminar
@@ -60,10 +59,9 @@ def elemento_box(item: Elemento, nombre_funcion: str) -> rx.Component:
             spacing="3",
             width="100%",
         ),
-        style={
-            "border_left": f"4px solid {border_color}",
-            "width": "100%",
-            "margin_right": "20px",
-        },
-        variant="surface"
+        
+        border_left = f"4px solid {border_color}",
+        width = "100%",
+        variant="surface",
+        margin="2px 2px 0 0",
     )

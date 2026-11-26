@@ -3,13 +3,12 @@ import reflex as rx
 # from .pruebas.prueba1 import index
 # from .pages.vista_elementos import vista_elementos
 from .components.lista_elementos import lista_elementos
-from .funciones.cargar import cargar
+from .components.cuadro_busqueda import cuadro_busqueda
 
 def index() -> rx.Component:
     return rx.box(
-        lista_elementos(cargar()),
-        border="4px solid white",
-        border_radius="8px",
+        cuadro_busqueda(),
+        lista_elementos(),
         margin="10px",
         )
 
